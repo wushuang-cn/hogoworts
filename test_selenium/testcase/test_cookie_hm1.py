@@ -6,7 +6,7 @@ import time
 from selenium import webdriver
 
 '''
-1.使用浏览器利用及 selenium cookie 方法，进行企业微信登陆，将代码（或 github 链接）贴到帖子下面1
+1.使用浏览器利用及 selenium cookie 方法，进行企业微信登陆，将代码（或 github 链接）贴到帖子下面
 '''
 class TestDemo():
 

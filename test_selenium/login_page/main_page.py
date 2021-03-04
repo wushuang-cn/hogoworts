@@ -2,7 +2,7 @@ from selenium import webdriver
 
 from test_selenium.login_page.contacts_page import Contactspage
 
-#第二次作业
+#第二次作业1
 class Mainpage:
     def __init__(self):
         # 声明 chrome 的参数

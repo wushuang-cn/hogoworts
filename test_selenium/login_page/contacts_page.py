@@ -10,7 +10,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from test_selenium.login_page.addmember_page import  Addmember
 
-#第二次作业
+#第二次作业1
 class Contactspage:
 
     def __init__(self,driver):
