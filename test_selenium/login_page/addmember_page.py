@@ -8,7 +8,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 '''
 添加成员详细操作
 '''
-
+#第二次作业
 class Addmember():
     def __init__(self,driver):
         self.driver=driver
