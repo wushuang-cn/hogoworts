@@ -1,12 +1,6 @@
 #! /usr/bin/env python
 # -*- coding:utf-8 -*-
-"""
-如何封装滑动查找？（swipe TouchAction）
-
-完成企业添加联系人
-"""
 import time
-
 from appium import  webdriver
 from appium.webdriver.common import mobileby
 from appium.webdriver.common.touch_action import TouchAction
@@ -16,6 +10,11 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 from test_appium.pythoncode.moveaction import MoveAction
 
+"""
+作业：如何封装滑动查找？（swipe TouchAction）
+
+完成企业添加联系人
+"""
 
 class TestAddmember():
     def setup(self):

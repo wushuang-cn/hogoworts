@@ -2,6 +2,11 @@
 # -*- coding:utf-8 -*-
 from appium.webdriver.common.touch_action import TouchAction
 
+"""
+如何封装滑动查找？（swipe TouchAction）
+
+完成企业添加联系人
+"""
 
 class MoveAction():
     def __init__(self,driver,y_start,y_end):
