@@ -1,0 +1,17 @@
+
+desired_caps:
+  platformName: 'Android'
+  plathformVersion: '10'
+  deviceName: 'e5bddedb'
+  appPackage: 'com.tencent.wework'
+  appActivity: '.launch.LaunchSplashActivity'
+  noReset: True
+  newCommandTimeout: 6000
+  automationName: 'UiAutomator2'
+  dontStopAppOnReset: True
+  skipServerInstallation: True
+
+
+
+
+
