@@ -1,0 +1,17 @@
+
+desired_caps:
+  platformName: 'Android'
+  plathformVersion: '10'
+  deviceName: 'e5bddedb'
+  appPackage: 'com.xueqiu.android'
+  appActivity: '.view.WelcomeActivityAlias'
+  noReset: True
+  newCommandTimeout: 6000
+  automationName: 'UiAutomator2'
+  dontStopAppOnReset: True
+  skipServerInstallation: True
+
+
+
+
+
