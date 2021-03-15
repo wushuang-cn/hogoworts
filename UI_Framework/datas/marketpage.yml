@@ -1,0 +1,14 @@
+MarketPage:
+      - action: find_click
+        locator: xpath
+        value: //*[@resource-id="com.xueqiu.android:id/action_search"]
+      - action: find_sendkeys
+        locator: xpath
+        value: //*[@resource-id="com.xueqiu.android:id/search_input_text"]
+        text: πÛ÷›√©Ã®
+      - action: find_click
+        locator: xpath
+        value: //*[@resource-id="com.xueqiu.android:id/name"]
+      - action: find
+        locator: xpath
+        value: //*[@resource-id="com.xueqiu.android:id/current_price"]

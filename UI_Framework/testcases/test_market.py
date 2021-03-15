@@ -9,8 +9,12 @@
 
     将黑名单功能放到装饰器，装饰 find 方法 （提高）
 
+作业二：
+实现UI自动化测试框架，功能包括：关键字，黑名单（装饰器），截图，录屏，日志（配置文件句柄和输出流句柄）
+
 '''
 from UI_Framework.pages.app import App
+from UI_Framework.pages.log import logger
 
 
 class TestMarket():
@@ -19,5 +23,5 @@ class TestMarket():
         self.t.start_app()
     def test_serchmaket(self):
         price_mt=self.t.goto_main().goto_marketpage().search_price()
-
-        assert float(price_mt)>2000
+        logger.info(f'断言{price_mt}')
+        assert float(price_mt)>2000,'断言失败'
