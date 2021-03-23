@@ -6,7 +6,8 @@ import json
 
 import mitmproxy.http
 from mitmproxy import http
-
+'''实现 MapLocal 修改雪球行情页的股票名称改为自己的名字
+实现 Rewrite 实现股票颜色变换的的边界值测试'''
 
 class Events:
     def http_connect(self, flow: mitmproxy.http.HTTPFlow):
