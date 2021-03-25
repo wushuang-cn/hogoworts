@@ -1,0 +1,7 @@
+
+env:
+  test:  qyapi.weixin.qq.com/cgi-bin
+  test_user:  qyapi.weixin.qq.com/cgi-bin/user
+
+corpid: 'wwda605783eec12ba5'
+corpsecret: 'vPU-44NVN-VzDA2KNx9qhgn6fBV3C21T8PiRPuBpJas'
