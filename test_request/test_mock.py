@@ -32,10 +32,10 @@ class Events:
         pass
         #模拟map local
         #返回的格式是json
-        # if "https://stock.xueqiu.com/v5/stock/batch/quote.json?_t=" in flow.request.pretty_url:
-        #     with open('./xueqiu.json','r',encoding='utf-8') as f:
-        #         flow.response=http.HTTPResponse.make(200,f.read(),{"Content-Type":"text/html"}
-        #                                              )
+        if "https://stock.xueqiu.com/v5/stock/batch/quote.json?_t=" in flow.request.pretty_url:
+            with open('./xueqiu.json','r',encoding='utf-8') as f:
+                flow.response=http.HTTPResponse.make(200,f.read(),{"Content-Type":"text/html"}
+                                                     )
 
 
     def responseheaders(self, flow: mitmproxy.http.HTTPFlow):
