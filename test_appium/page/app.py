@@ -8,15 +8,8 @@ import time
 import yaml
 
 from appium import  webdriver
-from appium.webdriver.common import mobileby
-from appium.webdriver.common.touch_action import TouchAction
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions
-from selenium.webdriver.support.wait import WebDriverWait
-
-from test_appium.page.contacts_page import Contacts_page
 from test_appium.page.mainpage import MainPage
-from test_appium.pythoncode.moveaction import MoveAction
+
 
 
 #初始化 进入app首页
