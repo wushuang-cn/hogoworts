@@ -4,17 +4,17 @@
 # author：WuShuang5
 import requests
 
-from test_feishu.common import gettoken
+from test_feishu.common import mytoken
 from test_feishu.source_data.fs_cal_create import cal_create
 
 calendar_id=cal_create()["data"]["calendar"]['calendar_id']
 
 def cal_delete():
     url = 'https://open.feishu.cn/open-apis/calendar/v4/calendars/'+calendar_id
-    abc = "Bearer " + gettoken()
+
 
     headers = {
-        "Authorization": abc,
+        "Authorization": mytoken,
         "Content-Type": "application/json; charset=utf-8"
     }
 

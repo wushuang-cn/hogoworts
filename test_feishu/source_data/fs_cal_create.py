@@ -6,26 +6,24 @@ import yaml
 
 import requests
 
-from test_feishu.common import gettoken
-
-with open('../data/cal.yml',encoding='utf-8') as f:
-    datayml_create = yaml.safe_load(f)['create']
+from test_feishu.common import mytoken
+from test_feishu.common import datayml_create
 
 
 def cal_create():
     url = 'https://open.feishu.cn/open-apis/calendar/v4/calendars'
-    abc = "Bearer " + gettoken()
+
 
     headers = {
-        "Authorization": abc,
+        "Authorization": mytoken,
         "Content-Type": "application/json; charset=utf-8"
     }
     data = {
-        "summary": datayml_create["summary"],
-        "description": datayml_create["description"],
+        "summary": datayml_create["create"]["summary"],
+        "description": datayml_create["create"]["description"],
         "permissions": "private",
         "color": -1,
-        "summary_alias": datayml_create["summary_alias"]
+        "summary_alias": datayml_create["create"]["summary_alias"]
     }
 
     res = requests.post(url=url, headers=headers, json=data)
