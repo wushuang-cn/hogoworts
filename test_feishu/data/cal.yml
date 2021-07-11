@@ -1,0 +1,11 @@
+
+
+create:
+    summary: 测试wu日历
+    description: 测试wu日历描述
+    summary_alias:  日历wu备注
+
+update:
+    summary: 测试wu日历1
+    description: 测试wu日历描述1
+    summary_alias:  日历wu备注1
